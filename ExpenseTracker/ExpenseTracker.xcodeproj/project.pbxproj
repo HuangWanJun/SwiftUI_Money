@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E2E331F2B3568D900AACA75 /* LockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2E331E2B3568D900AACA75 /* LockView.swift */; };
 		7E936E902B2ADF35008F6DFA /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E936E8F2B2ADF35008F6DFA /* Transaction.swift */; };
 		7E936E922B2AE3D7008F6DFA /* TintColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E936E912B2AE3D7008F6DFA /* TintColor.swift */; };
 		7E936E952B2AE5AD008F6DFA /* Recents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E936E942B2AE5AD008F6DFA /* Recents.swift */; };
@@ -49,6 +50,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7E2E331E2B3568D900AACA75 /* LockView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LockView.swift; sourceTree = "<group>"; };
 		7E936E8F2B2ADF35008F6DFA /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		7E936E912B2AE3D7008F6DFA /* TintColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TintColor.swift; sourceTree = "<group>"; };
 		7E936E942B2AE5AD008F6DFA /* Recents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recents.swift; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 		7E936EA02B2AFC3C008F6DFA /* helpers */ = {
 			isa = PBXGroup;
 			children = (
+				7E2E331E2B3568D900AACA75 /* LockView.swift */,
 				7E936EA12B2AFC44008F6DFA /* CardView.swift */,
 				7E936EA32B2BEB69008F6DFA /* TransactionCardView.swift */,
 				7E936EA52B2BF5B1008F6DFA /* DateFilterView.swift */,
@@ -347,6 +350,7 @@
 				7E936E902B2ADF35008F6DFA /* Transaction.swift in Sources */,
 				7E9EE07D2B2994F600E5294D /* IntroScreen.swift in Sources */,
 				7E936EA22B2AFC45008F6DFA /* CardView.swift in Sources */,
+				7E2E331F2B3568D900AACA75 /* LockView.swift in Sources */,
 				7E936EA62B2BF5B1008F6DFA /* DateFilterView.swift in Sources */,
 				7E9EE0512B29943100E5294D /* ContentView.swift in Sources */,
 				7E9EE0842B299E0900E5294D /* Tab.swift in Sources */,
