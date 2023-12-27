@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct TransactionCardView: View {
+    
+    @Environment(\.modelContext) private var context
     var transaction: Transaction
     var body: some View {
         HStack(spacing:12){
@@ -44,5 +46,6 @@ struct TransactionCardView: View {
 }
 
 #Preview {
-    TransactionCardView(transaction: sampleTransaction.randomElement()!)
+   // TransactionCardView(transaction: sampleTransaction.randomElement()!)
+    ContentView()
 }

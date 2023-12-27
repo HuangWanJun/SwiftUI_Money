@@ -23,7 +23,7 @@ struct Settings: View {
                     Toggle("Enable App Lock",isOn:$isAppLockEnabled)
                     
                     if isAppLockEnabled {
-                        Toggle("loc kWhen App Goes Background",isOn: $lockWhenAppGoesBackground)
+                        Toggle("lock When App Goes Background",isOn: $lockWhenAppGoesBackground)
                     }
                 }
             }

@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct Recents: View {
     
@@ -16,6 +17,8 @@ struct Recents: View {
     @State private var selectedCategory: Category = .expense
     ///For animation
     @Namespace private var animation
+    @Query(sort:[SortDescriptor(\Transaction.dateAdded,order: .reverse)],animation: .snappy) private var transcations:[Transaction]
+    
     var body: some View {
         
         GeometryReader {
@@ -42,11 +45,18 @@ struct Recents: View {
                             CustomSegmentedControl()
                                 .padding(.bottom,10)
                             
-                            //list
-                            ForEach(sampleTransaction.filter({$0.category == selectedCategory.rawValue})){ transaction in
-                                TransactionCardView(transaction: transaction)
+//                            //list
+                            ForEach(transcations){ transcation in
+                                NavigationLink {
+                                    TransactionView(editTranscation: transcation)
+                                } label: {
+                                    TransactionCardView(transaction: transcation)
+                                }
+
+                               
                             }
                             
+   
                         }header: {
                             HeaderView(size)
                               
@@ -101,7 +111,7 @@ struct Recents: View {
             Spacer(minLength: 0)
             
             NavigationLink {
-                
+                TransactionView()
             } label: {
                 Image(systemName: "plus")
                     .font(.title3)
